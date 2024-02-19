@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Make Your Own Adventure</title>
+    </head>
+    <body>
+
+        <header>
+            <section>
+                <img src="images/usclogo.png" alt="USC Logo">
+                <nav>
+                    <p> <a href="homepage.html">Home</a> | <a href="aboutpage.html">About</a> | <a href="experiences.html">Adventure Trips</a> | <a href="whatwedo.html">What We Do</a> | <a href="formpage.html">Make A Trip</a></p>
+                </nav>
+                <img src="images/backpacking1.png" alt="Backpacking picture">
+            </section>
+        </header>
+
+        <main>
+            <h2>Make Your Own Adventure</h2>
+            <article>
+                As OREC Adventure Trips are planned and ran primarily by students, it would be useful to go to you to tell us what kind of Adventure Trip you would like OREC to take you on.
+            </article>
+
+            <form method="POST">
+                <fieldset>
+                    <p>
+                        <label for="first">First Name:</label>
+                        <input type="text" name="first" id="first"
+                        placeholder="First name">
+                    </p>
+
+                    <p>
+                        <label for="last">Last Name:</label>
+                        <input type="text" name="last" id="last" placeholder="Last name">
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" placeholder="email">
+                    </p>
+        
+                    <label>What experience do you want?</label>
+                    <select name="experience">
+                        <option value="land">Land</option>
+                        <option value="water">Water</option>
+                        <option value="rock">Rock</option>
+                    </select>
+
+                    <p>
+                        <label for="location">Where do you want to go?</label>
+                        <input type="text" name="location" id="location">
+                    </p>
+                    <label>Which semester is your trip?</label>
+                    <select name="semester">
+                        <option value="first">First</option>
+                        <option value="second">Second</option>
+                    </select>
+
+                    <p>
+                        <label for="length">How long is your trip?</label>
+                        <input type="text" name="length" id="length">
+                    </p>
+                </fieldset>
+            </form>
+        </main>
+        <footer><p>Copyright John Mullen 2023©</p></footer>
+    </body>
+</html>
