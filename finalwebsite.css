@@ -1,0 +1,107 @@
+/* Global configuration*/
+
+
+/* basic body configuration*/
+body{ 
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+/*header background and font color*/
+h2,h3{
+    display: inline-flex;
+    background-color: #660000;
+    color: white;
+}
+
+/*the the header as the entire screen width */
+header{ 
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*navigation bar full the width of the screen*/
+header nav{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+ul{
+    max-width: 1200px;
+}
+
+/*logo image stays in the top left corner*/
+head section #logo { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+/*main image before text*/
+header section #main{
+    width: 100%;
+    max-height: 35%;
+    float: left;
+    padding-bottom: 10px;
+    z-index: 1;
+
+}
+/* images within the text*/
+section .main{
+    float: right;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+/*background space around the nav bar */
+nav ul{
+    padding: 15px; 
+}
+
+
+/*footer config*/
+footer{ 
+    background-color: #660000;
+}
+
+footer p{
+    color: white;
+}
+/*navigation bar*/
+
+/*background and border color*/
+nav{
+    background-color: #660000;
+    border: 2px solid black;
+    text-align: center;
+}
+
+/*puts the links on the same line*/
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    text-align:center;
+}
+
+/*link character config*/
+ul a{
+    font: bold;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/*mouse hovering over the links*/
+ul a:hover{
+    background-color: #ff0000;  
+    color: white;
+}
+
