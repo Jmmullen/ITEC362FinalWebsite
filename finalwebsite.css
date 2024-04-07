@@ -3,7 +3,7 @@
 
 /* basic body configuration*/
 body{ 
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
@@ -23,26 +23,10 @@ header{
     margin-right: auto;
 }
 
-/*navigation bar full the width of the screen*/
-header nav{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-
-
-}
-
 ul{
     max-width: 1200px;
 }
 
-/*logo image stays in the top left corner*/
-head section #logo { 
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
 /*main image before text*/
 header section #main{
     width: 100%;
@@ -50,7 +34,10 @@ header section #main{
     float: left;
     padding-bottom: 10px;
     z-index: 1;
+}
 
+section{
+    padding: 75px;
 }
 /* images within the text*/
 section .main{
@@ -58,22 +45,41 @@ section .main{
     border-style: solid;
     border-width: 1px;
     border-color: black;
-}
-/*background space around the nav bar */
-nav ul{
-    padding: 15px; 
-}
+    height: auto;
 
+}
 
 /*footer config*/
 footer{ 
     background-color: #660000;
+    padding: 5px;
 }
 
 footer p{
     color: white;
 }
+
+
 /*navigation bar*/
+
+
+/*logo image stays in the top left corner*/
+#logo { 
+   float:left;
+}
+
+/*navigation bar full the width of the screen*/
+header nav{
+    width: 100%;
+    margin: auto
+
+}
+/*background space around the nav bar */
+nav ul{
+    padding: 15px; 
+   display: inline-block;
+   list-style-type: none;
+}
 
 /*background and border color*/
 nav{
@@ -83,8 +89,7 @@ nav{
 }
 
 /*puts the links on the same line*/
-ul li{
-    list-style-type: none;
+nav li{
     display: inline-block;
     text-align:center;
 }
@@ -93,10 +98,13 @@ ul li{
 ul a{
     font: bold;
     text-decoration: none;
-    color: black;
-    text-align: center;
+    color: gray;
     padding: 10px;
     font-size: 20px;
+}
+
+nav a {
+    display: block
 }
 
 /*mouse hovering over the links*/
@@ -104,4 +112,6 @@ ul a:hover{
     background-color: #ff0000;  
     color: white;
 }
+
+
 
