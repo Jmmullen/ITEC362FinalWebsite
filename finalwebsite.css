@@ -10,7 +10,7 @@ body{
 }
 
 /*header background and font color*/
-h2,h3{
+h1,h2,h3{
     display: inline-flex;
     background-color: #660000;
     color: white;
