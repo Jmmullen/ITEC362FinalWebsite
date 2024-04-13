@@ -17,6 +17,10 @@
 
       gtag('config', 'G-T4TJJ63J3C');
     </script>
+    <style>
+        article{ font-size: 32px;}
+        #call { text-align: center;}
+    </style>
 </head>
 <body>
 
@@ -37,8 +41,8 @@
     </header>
 
     <main>
-        <section>
-            <h1>Explore With Us!</h1>
+        <section id="call">
+            <h1 id="action">Explore With Us!</h1>
         </section>
         <section>
             <h3>Overview</h3>
@@ -47,5 +51,28 @@
         </section>
     </main>
     <footer><p>Copyright John Mullen 2023©</p></footer>
+    <script>
+        // Function to convert header elements into clickable links
+        function makeHeadersClickable() {
+            // Get  header elements
+            var headers = document.querySelectorAll('h1');
+            // Loop through each header element
+            headers.forEach(function(header) {
+                // Create a new anchor element
+                var link = document.createElement('a');
+                // Set the href attribute to "#" + the header's id
+                link.href = "https://garnetgate.sa.sc.edu/organization/campus_recreation";
+                // Set the text content of the anchor element to the header's text content
+                link.textContent = header.textContent;
+                // Clear the text content of the header
+                header.textContent = '';
+                // Append the anchor element to the header
+                header.appendChild(link);
+            });
+        }
+    
+        // Call the function to make headers clickable when the page loads
+        window.onload = makeHeadersClickable;
+    </script>
 </body>
 </html>
